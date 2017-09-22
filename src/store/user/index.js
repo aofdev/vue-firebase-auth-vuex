@@ -21,8 +21,7 @@ export default {
               id: user.uid,
               name: user.displayName,
               email: user.email,
-              photoUrl: user.photoURL,
-              fbKeys: {}
+              photoUrl: user.photoURL
             }
             commit('setUser', newUser)
           }
@@ -46,8 +45,7 @@ export default {
               id: user.uid,
               name: user.displayName,
               email: user.email,
-              photoUrl: user.photoURL,
-              fbKeys: {}
+              photoUrl: user.photoURL
             }
             commit('setUser', newUser)
           }
@@ -65,8 +63,7 @@ export default {
         id: payload.uid,
         name: payload.displayName,
         email: payload.email,
-        photoUrl: payload.photoURL,
-        fbKeys: {}
+        photoUrl: payload.photoURL
       })
     },
     logout ({commit}) {

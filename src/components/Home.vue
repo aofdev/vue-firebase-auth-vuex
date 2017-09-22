@@ -1,16 +1,18 @@
 <template>
-  <div >
-    <h2>Welcome to Your Vue.js firebase auth with PWA</h2>
-  </div>
+  <v-container>
+    <v-layout>
+      <v-flex xs12 sm6 offset-sm3>
+        <v-card>
+          <v-card-title primary-title>
+            <div>
+              <h3 class="headline mb-0">Welcome to Your Vue.js firebase auth with PWA</h3>
+              <div></div>
+            </div>
+          </v-card-title>
+        </v-card>
+      </v-flex>
+    </v-layout>
+  </v-container>
 </template>
 
-<script>
 
-</script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style>
-h1, h2 {
-  font-weight: normal;
-}
-</style>
