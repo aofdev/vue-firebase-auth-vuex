@@ -1,18 +1,11 @@
 <template>
   <div >
-    <h1>{{ msg }}</h1>
+    <h2>Welcome to Your Vue.js firebase auth with PWA</h2>
   </div>
 </template>
 
 <script>
-export default {
-  name: 'home',
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js firebase auth with PWA'
-    }
-  }
-}
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
