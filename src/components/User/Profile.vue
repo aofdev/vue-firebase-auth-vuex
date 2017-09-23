@@ -4,10 +4,10 @@
     <v-flex xs12 sm6 offset-sm3>
       <v-card>
         <v-card-title primary-title>
-          <div>
-            <h3 class="headline mb-0">{{ user.name }}</h3>
-            <h3 class="headline mb-0">{{ user.email }}</h3>
-            <div></div>
+          <div class="text-md-center">
+            <h2>Login Success</h2>
+            <h4 class="headline mb-0">{{ user.name }}</h4>
+            <h4 class="headline mb-0">{{ user.email }}</h4>
           </div>
         </v-card-title>
       </v-card>

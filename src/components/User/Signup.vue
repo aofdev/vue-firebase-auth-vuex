@@ -46,12 +46,47 @@
                 </v-layout>
                 <v-layout row>
                   <v-flex xs12>
-                    <v-btn type="submit" :disabled="loading" :loading="loading">
+                    <div class="text-xs-center">
+                    <v-btn round type="submit" :disabled="loading" :loading="loading">
                       Sign up
+                      <v-icon right>lock_open</v-icon>
                       <span slot="loader" class="custom-loader">
                         <v-icon light>cached</v-icon>
                        </span>
                     </v-btn>
+                    </div>
+                    <div class="text-xs-center">
+                      <v-btn round class="red" dark :disabled="loading" :loading="loading" @click.prevent="onSigninGoogle">Login with Google
+                        <v-icon right dark>lock_open</v-icon>
+                        <span slot="loader" class="custom-loader">
+                        <v-icon light>cached</v-icon>
+                       </span>
+                      </v-btn>
+                    </div>
+                    <div class="text-xs-center">
+                      <v-btn round primary dark :disabled="loading" :loading="loading" @click.prevent="onSigninFacebook">Login with Facebook
+                        <v-icon right dark>lock_open</v-icon>
+                        <span slot="loader" class="custom-loader">
+                        <v-icon light>cached</v-icon>
+                       </span>
+                      </v-btn>
+                    </div>
+                    <div class="text-xs-center">
+                      <v-btn round dark :disabled="loading" :loading="loading" @click.prevent="onSigninGithub">Login with Github
+                        <v-icon right dark>lock_open</v-icon>
+                        <span slot="loader" class="custom-loader">
+                        <v-icon light>cached</v-icon>
+                       </span>
+                      </v-btn>
+                    </div>
+                    <div class="text-xs-center">
+                      <v-btn round info dark :disabled="loading" :loading="loading" @click.prevent="onSigninTwitter">Login with Twitter
+                        <v-icon right dark>lock_open</v-icon>
+                        <span slot="loader" class="custom-loader">
+                        <v-icon light>cached</v-icon>
+                       </span>
+                      </v-btn>
+                    </div>
                   </v-flex>
                 </v-layout>
               </form>
@@ -96,6 +131,18 @@
     methods: {
       onSignup () {
         this.$store.dispatch('signUserUp', {email: this.email, password: this.password})
+      },
+      onSigninGoogle () {
+        this.$store.dispatch('signUserInGoogle')
+      },
+      onSigninFacebook () {
+        this.$store.dispatch('signUserInFacebook')
+      },
+      onSigninGithub () {
+        this.$store.dispatch('signUserInGithub')
+      },
+      onSigninTwitter () {
+        this.$store.dispatch('signUserInTwitter')
       },
       onDismissed () {
         this.$store.dispatch('clearError')
