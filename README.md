@@ -2,6 +2,8 @@
 
 > vue firebase auth vuex
 
+![alt tag](https://i.imgur.com/5AnRW5j.png)
+
 ## Build Setup
 
 ``` bash
