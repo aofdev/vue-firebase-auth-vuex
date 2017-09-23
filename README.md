@@ -1,6 +1,6 @@
-# vue-firebase-auth-vuex
+# vue-firebase🔥-auth-vuex
 
-> vue firebase auth vuex with pwa
+> vue firebase🔥 auth vuex with pwa
 
 ![alt tag](https://i.imgur.com/5AnRW5j.png)
 
