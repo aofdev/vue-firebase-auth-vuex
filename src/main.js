@@ -6,10 +6,12 @@ import App from './App'
 import * as firebase from 'firebase'
 import router from './router'
 import { store } from './store'
+import AlertCmp from './components/Shared/Alert.vue'
 
 Vue.use(Vuetify)
 Vue.config.productionTip = false
 
+Vue.component('app-alert', AlertCmp)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
@@ -24,6 +26,11 @@ new Vue({
       databaseURL: '',
       projectId: '',
       storageBucket: ''
+    })
+    firebase.auth().onAuthStateChanged((user) => {
+      if (user) {
+        this.$store.dispatch('autoSignIn', user)
+      }
     })
   }
 })
