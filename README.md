@@ -38,7 +38,7 @@ yarn install
 # serve with hot reload at localhost:8080
 yarn dev
 
-# build for production with minification
+# build for production with minification and to build Progressive Web Apps
 yarn build
 
 ```
