@@ -1,4 +1,4 @@
-# vue firebase🔥 auth vuex with pwa
+# vue firebase🔥 auth vuex with progressive web apps
 
 > vue firebase🔥 authentication
 
