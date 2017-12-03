@@ -33,13 +33,14 @@ git clone git@github.com:aofdev/vue-firebase-auth-vuex.git
 cd vue-firebase-auth-vuex
 
 # install dependencies
-yarn install
+npm install || yarn install
 
 # serve with hot reload at localhost:8080
-yarn dev
+npm run dev || yarn dev
 
 # build for production with minification and to build Progressive Web Apps
-yarn build
+npm run build || yarn build
+
 
 ```
 
