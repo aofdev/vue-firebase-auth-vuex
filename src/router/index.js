@@ -1,9 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from '@/components/Home'
-import Profile from '@/components/User/Profile'
-import Signup from '@/components/User/Signup'
-import Signin from '@/components/User/Signin'
+const Home = () => import('@/components/Home')
+const Profile = () => import('@/components/User/Profile')
+const Signup = () => import('@/components/User/Signup')
+const Signin = () => import('@/components/User/Signin')
 import AuthGuard from './auth-guard'
 
 Vue.use(Router)
