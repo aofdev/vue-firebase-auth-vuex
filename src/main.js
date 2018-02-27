@@ -2,11 +2,11 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import Vuetify from 'vuetify'
-import App from './App'
+const App = () => import('./App')
 import * as firebase from 'firebase'
 import router from './router'
 import { store } from './store'
-import AlertCmp from './components/Shared/Alert.vue'
+const AlertCmp = () => import('./components/Shared/Alert.vue')
 
 Vue.use(Vuetify)
 Vue.config.productionTip = false
