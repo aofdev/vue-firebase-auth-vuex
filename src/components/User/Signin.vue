@@ -15,7 +15,7 @@
                   <v-flex xs12>
                     <v-text-field
                       name="email"
-                      label="Mail"
+                      label="Email"
                       id="email"
                       v-model="email"
                       type="email"
@@ -45,7 +45,7 @@
                     </v-btn>
                     </div>
                     <div class="text-xs-center">
-                      <v-btn round class="red" dark :disabled="loading" :loading="loading" @click.prevent="onSigninGoogle">Login with Google
+                      <v-btn round color="red" dark :disabled="loading" :loading="loading" @click.prevent="onSigninGoogle">Login with Google
                         <v-icon right dark>lock_open</v-icon>
                         <span slot="loader" class="custom-loader">
                         <v-icon light>cached</v-icon>
@@ -53,7 +53,7 @@
                       </v-btn>
                     </div>
                     <div class="text-xs-center">
-                      <v-btn round primary dark :disabled="loading" :loading="loading" @click.prevent="onSigninFacebook">Login with Facebook
+                      <v-btn round color="primary" dark :disabled="loading" :loading="loading" @click.prevent="onSigninFacebook">Login with Facebook
                         <v-icon right dark>lock_open</v-icon>
                         <span slot="loader" class="custom-loader">
                         <v-icon light>cached</v-icon>
@@ -69,7 +69,7 @@
                       </v-btn>
                     </div>
                     <div class="text-xs-center">
-                      <v-btn round info dark :disabled="loading" :loading="loading" @click.prevent="onSigninTwitter">Login with Twitter
+                      <v-btn round color="info" dark :disabled="loading" :loading="loading" @click.prevent="onSigninTwitter">Login with Twitter
                         <v-icon right dark>lock_open</v-icon>
                         <span slot="loader" class="custom-loader">
                         <v-icon light>cached</v-icon>

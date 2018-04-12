@@ -3,14 +3,15 @@
   <v-layout>
     <v-flex xs12 sm6 offset-sm3>
       <v-card>
-        <v-card-title primary-title>
+        <v-card-text>
           <div class="text-md-center">
-            <h2>Login Success</h2>
-            <h4 class="headline mb-0">{{ user.name }}</h4>
-            <h4 class="headline mb-0">{{ user.email }}</h4>
+            <v-icon large color="green darken-2">check_circle</v-icon>
+              <h1 class="green--text">Login Success</h1>
+              <h4 class="headline mb-0"><b class="red--text">Name :</b> {{ user.name }}</h4>
+              <h4 class="headline mb-0"><b class="red--text">Email :</b> {{ user.email }}</h4>
           </div>
-        </v-card-title>
-      </v-card>
+        </v-card-text>
+     </v-card>
     </v-flex>
   </v-layout>
   </v-container>
