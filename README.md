@@ -1,6 +1,6 @@
-# vue firebase🔥 auth vuex with progressive web apps
+# vue auth firebase🔥 vuex with progressive web apps
 
-> vue firebase🔥 authentication
+> vue authentication firebase🔥 
 
 ![alt tag](https://i.imgur.com/5AnRW5j.png)
 
