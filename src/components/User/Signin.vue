@@ -76,6 +76,15 @@
                        </span>
                       </v-btn>
                     </div>
+                    <br />
+                    <div class="text-xs-center">
+                      <v-btn round color="warning" dark :disabled="loading" :loading="loading" @click.prevent="onResetPassword">Reset Password By Email
+                        <v-icon right dark>email</v-icon>
+                        <span slot="loader" class="custom-loader">
+                        <v-icon light>cached</v-icon>
+                       </span>
+                      </v-btn>
+                    </div>
                   </v-flex>
                 </v-layout>
               </form>
@@ -128,6 +137,12 @@
       },
       onSigninTwitter () {
         this.$store.dispatch('signUserInTwitter')
+      },
+      onResetPassword () {
+        if (this.email === '') {
+          return this.$store.dispatch('setError', {message: 'Email can not be blnak'})
+        }
+        this.$store.dispatch('resetPasswordWithEmail', {email: this.email})
       },
       onDismissed () {
         this.$store.dispatch('clearError')

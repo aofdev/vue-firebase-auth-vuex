@@ -17,6 +17,9 @@ export default {
   actions: {
     clearError ({commit}) {
       commit('clearError')
+    },
+    setError ({commit}, payload) {
+      commit('setError', payload)
     }
   },
   getters: {
