@@ -140,7 +140,7 @@
       },
       onResetPassword () {
         if (this.email === '') {
-          return this.$store.dispatch('setError', {message: 'Email can not be blnak'})
+          return this.$store.dispatch('setError', {message: 'Email can not be blank'})
         }
         this.$store.dispatch('resetPasswordWithEmail', {email: this.email})
       },
